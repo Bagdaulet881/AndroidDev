@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="45dp"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/bottom"
+    android:background="@drawable/menu">
+
+
+
+                <Button
+                    android:id="@+id/button_home"
+                    android:onClick="buttonHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:text=""
+                    android:alpha="0"/>
+
+                <Button
+                    android:id="@+id/button_find"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:alpha="0"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/button_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha="0"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/button_heart"
+                    android:onClick="buttonLiked"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha="0"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/button_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha="0"
+                    android:text="" />
+
+
+</LinearLayout>

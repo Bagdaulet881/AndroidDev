@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relLayoutParent">
+
+
+
+        <!--Top_____BAR-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout1">
+            <include layout="@layout/news_top_bar"/>
+        </RelativeLayout>
+
+
+        <!-- Middle section (body) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:id="@+id/relLayout2"
+            android:layout_below="@+id/relLayout1">
+
+
+            <include layout="@layout/center_view"/>
+
+            <FrameLayout
+                android:id="@+id/likedNews"
+                android:layout_width="match_parent"
+                android:layout_height="640dp"
+                android:foregroundGravity="fill"
+                />
+        </RelativeLayout>
+
+
+        <!-- bottom navigation -->
+
+        <include layout="@layout/news_bottom"/>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
