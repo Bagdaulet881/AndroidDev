@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CalcByBakosta</string>
+    <string name="rightBtnText"><![CDATA[<]]></string>
+
+    <string name="item1">History</string>
+    <string name="item2">Choose theme</string>
+    <string name="item3">Send feedback</string>
+    <string name="item4">Help</string>
+
+</resources>
