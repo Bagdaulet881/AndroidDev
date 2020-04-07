@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/imgCard"
+        app:layout_constraintStart_toStartOf="@+id/imgCard"
+        app:layout_constraintTop_toBottomOf="@id/imgCard"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#95a39c"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        app:layout_constraintVertical_bias="0.333"
+        tools:text="PostDate" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Subscription"
+        android:textColor="#fc8403"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imgCard"
+        android:layout_width="131dp"
+        android:layout_height="196dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:background="#000000"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivPoster"
+            android:layout_width="132dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="-2dp"
+            tools:text="ImageView" />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.cardview.widget.CardView-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:backgroundTint="@color/colorPrimaryDark"-->
+<!--    android:layout_margin="10dp"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_marginLeft="4dp"-->
+<!--    android:layout_marginRight="4dp"-->
+<!--    android:layout_marginTop="4dp"-->
+<!--    android:layout_marginBottom="8dp"-->
+<!--    android:focusable="true"-->
+<!--    app:cardElevation="2dp">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/ivPoster"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="180dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:layout_gravity="center"-->
+<!--            tools:srcCompat="@tools:sample/avatars">-->
+<!--            &lt;!&ndash;//@+id/cv_iv_movie_poster @+id/cv_movie_title @+id/cv_movie_release_date&ndash;&gt;-->
+<!--        </ImageView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvName"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="2dp"-->
+<!--            android:layout_marginStart="4dp"-->
+<!--            android:text="movie"-->
+<!--            android:textColor="#FFFF"-->
+<!--            android:textSize="12sp"-->
+<!--            android:maxLines="1"-->
+<!--            android:ellipsize="end"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvDate"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="4dp"-->
+<!--            android:layout_marginBottom="4dp"-->
+<!--            android:textColor="#FFFF"-->
+<!--            android:text="2019"-->
+<!--            android:maxLength="4"-->
+<!--            android:textSize="12sp"/>-->
+
+<!--    </LinearLayout>-->
+
+
+<!--</androidx.cardview.widget.CardView>-->

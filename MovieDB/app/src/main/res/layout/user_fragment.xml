@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="680dp"
+    android:background="@color/colorPrimary"
+    tools:context=".main.user.UserFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/NameValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-black"
+            android:text="TextView"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/UsernameValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/bottomItemColor"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/NameValue"
+            app:layout_constraintHorizontal_bias="0.046"
+            app:layout_constraintStart_toStartOf="@+id/NameValue"
+            app:layout_constraintTop_toBottomOf="@+id/NameValue" />
+
+        <ImageView
+            android:id="@+id/storyImgCirc"
+            android:layout_width="72dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/user_circle_background"
+            app:layout_constraintBottom_toTopOf="@+id/storyTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.985"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="serif"
+            android:text="B"
+            android:textColor="#ffffff"
+            android:textSize="54sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/storyImgCirc"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--        <ImageView-->
+<!--            android:layout_width="61dp"-->
+<!--            android:layout_height="74dp"-->
+<!--            android:layout_marginStart="2dp"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:src="@drawable/ava"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.941"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/UsernameValue"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            />-->
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--            android:id="@+id/profile_image"-->
+<!--            android:layout_width="61dp"-->
+<!--            android:layout_height="74dp"-->
+<!--            android:src="@drawable/ava"-->
+<!--            app:civ_border_width="2dp"-->
+<!--            app:civ_border_color="#FF000000"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.941"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/UsernameValue"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--        />-->
+<!--        <com.github.abdularis.civ.AvatarImageView-->
+<!--            android:id="@+id/userAva"-->
+<!--            android:layout_width="61dp"-->
+<!--            android:layout_height="74dp"-->
+<!--            android:layout_marginStart="2dp"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:src="@drawable/ava"-->
+<!--            app:highlightEnable="true"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.941"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/UsernameValue"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:strokeWidth="2dp"-->
+<!--            app:view_state="IMAGE" />-->
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="86dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="52dp"
+
+            android:background="@android:color/transparent"
+            android:text="Log Out"
+            android:textColor="#4fb99d"
+            app:layout_constraintBottom_toBottomOf="@+id/UsernameValue"
+            app:layout_constraintStart_toEndOf="@+id/UsernameValue"
+            app:layout_constraintTop_toTopOf="@+id/UsernameValue"
+            app:layout_constraintVertical_bias="0.444" />
+
+        <ProgressBar
+            android:id="@+id/progressBarProfile"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
