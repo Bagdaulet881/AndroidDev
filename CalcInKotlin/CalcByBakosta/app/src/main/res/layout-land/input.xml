@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <TextView            android:fontFamily="@font/rubik"
+
+        android:id="@id/resultField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:gravity="end"
+        android:height="30dp"
+        android:textColor="@color/res"
+        android:background="@color/inpback"
+        android:padding="10dp"
+        android:text=""/>
+
+    <EditText            android:fontFamily="@font/rubik"
+
+        android:id="@id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/inpback"
+        android:gravity="end"
+        android:padding="10dp"
+        android:height="70dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@drawable/line"
+        android:layout_row="4"
+        android:layout_column="0"/>
+
+
+</LinearLayout>
